@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <nav id="nav">
+      <div class="container">
+        <div class="nav-title">
+          <h1>Zi Store</h1>
+        </div>
+        <div class="nav-list">
+          <button class="btn-shopping-cart">Cart</button>
+          <div class="shopping-cart">
+            <table class="shopping-cart-list">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Subtotal</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4">Subtotal</td>
+                  <td class="total">0</td>
+                </tr>
+              </tfoot>
+
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Section Product List -->
+  <div class="section-products">
+    <div class="container">
+
+      <!-- 3 x 3 Grid Card -->
+      <div class="product-list">
+        <!-- Card -->
+        <div class="product-card">
+          <img src="images/1.jpg" alt="">
+          <h3 class="product-name">ASUS ROG 2</h3>
+          <p class="product-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quos pariatur veritatis odit provident quisquam atque fugiat dolorum ducimus magni.</p>
+          <h5 class="product-price" data-value="200">Price:$200</h5>
+          <a href="#" class="btn-add-cart" data-id="1">Add to Cart</a>
+        </div>
+        <div class="product-card">
+          <img src="images/2.jpg" alt="">
+          <h3 class="product-name">Macbook Pro 2020</h3>
+          <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolores delectus voluptates excepturi ratione odio.</p>
+          <h5 class="product-price" data-value="80">Price:$80</h5>
+          <a href="#" class="btn-add-cart" data-id="2">Add to Cart</a>
+        </div>
+        <div class="product-card">
+          <img src="images/3.jpg" alt="">
+          <h3 class="product-name">Lenovo 612</h3>
+          <p class="product-description">Lorem ipsum dolor sit amet.</p>
+          <h5 class="product-price" data-value="250">Price: $250</h5>
+          <a href="#" class="btn-add-cart" data-id="3">Add to Cart</a>
+        </div>
+        <div class="product-card">
+          <img src="images/1.jpg" alt="">
+          <h3 class="product-name">ASUS X455LF</h3>
+          <p class="product-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quos pariatur veritatis odit provident quisquam atque fugiat dolorum ducimus magni.</p>
+          <h5 class="product-price" data-value="60">Price:$60</h5>
+          <a href="#" class="btn-add-cart" data-id="4">Add to Cart</a>
+        </div>
+        <div class="product-card">
+          <img src="images/2.jpg" alt="">
+          <h3 class="product-name">Macbook Air 2018</h3>
+          <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolores delectus voluptates excepturi ratione odio.</p>
+          <h5 class="product-price" data-value="29">Price:$29</h5>
+          <a href="#" class="btn-add-cart" data-id="5">Add to Cart</a>
+        </div>
+        <div class="product-card">
+          <img src="images/3.jpg" alt="">
+          <h3 class="product-name">Ace Aspire 153</h3>
+          <p class="product-description">Lorem ipsum dolor sit amet.</p>
+          <h5 class="product-price" data-value="35">Price:$35</h5>
+          <a href="#" class="btn-add-cart" data-id="6">Add to Cart</a>
+        </div>
+        <div class="product-card">
+          <img src="images/1.jpg" alt="">
+          <h3 class="product-name">Razer 2</h3>
+          <p class="product-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quos pariatur veritatis odit provident quisquam atque fugiat dolorum ducimus magni.</p>
+          <h5 class="product-price" data-value="185">Price:$185</h5>
+          <a href="#" class="btn-add-cart" data-id="7">Add to Cart</a>
+        </div>
+        <div class="product-card">
+          <img src="images/2.jpg" alt="">
+          <h3 class="product-name">Razer 3</h3>
+          <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolores delectus voluptates excepturi ratione odio.</p>
+          <h5 class="product-price" data-value="230">Price:$230</h5>
+          <a href="#" class="btn-add-cart" data-id="8">Add to Cart</a>
+        </div>
+        <div class="product-card">
+          <img src="images/3.jpg" alt="">
+          <h3 class="product-name">Sony Vios 1</h3>
+          <p class="product-description">Lorem ipsum dolor sit zamet.</p>
+          <h5 class="product-price" data-value="130">Price:$130</h5>
+          <a href="#" class="btn-add-cart" data-id="9">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+
+      <p>&copy; Copyright 2020, Zi Store</p>
+    </div>
+
+  </footer>
+
+
+  <div class="message-float">
+    <span class="message-content"></span>
+  </div>
+
+
+
+
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

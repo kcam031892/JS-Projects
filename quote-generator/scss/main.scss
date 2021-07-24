@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+$primaryColor: #52057b;
+$secondaryColor: #892cdc;
+$accentColor: #bc6ff1;
+$grayColor: #d9d9d9;
+$gradient: linear-gradient(45deg, $primaryColor, $secondaryColor, $accentColor);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.2;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: $gradient;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  overflow: hidden;
+}
+.quote {
+  margin: 1rem 0;
+  padding: 2rem;
+  min-height: 300px;
+  &__message {
+    color: #fff;
+    position: relative;
+    &.long {
+      font-size: 24px;
+    }
+    &.medium {
+      font-size: 32px;
+    }
+    &.short {
+      font-size: 42px;
+    }
+    &::before,
+    &::after {
+      font-family: 'Zen Dots', cursive;
+      content: '"';
+      font-size: 6rem;
+      width: 2rem;
+      height: 4rem;
+      color: $grayColor;
+      opacity: 0.3;
+    }
+    &::before {
+      position: absolute;
+      left: -30px;
+      top: -30px;
+      transform: translate(-50%, -50%) rotate(120deg);
+    }
+    &::after {
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(45deg);
+      top: -30px;
+      right: -30px;
+    }
+  }
+  &__author {
+    text-align: right;
+    color: $grayColor;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.btn {
+  padding: 1.5rem 2rem;
+  min-width: 300px;
+  font-size: 1rem;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: $secondaryColor;
+  color: #fff;
+  box-shadow: 2px 9px 8px rgba($primaryColor, 0.85);
+  &:disabled {
+    opacity: 0.2;
+    cursor: auto;
+  }
+}
+
+.loading {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  transition: all 0.2s ease-in-out;
+  &.show {
+    display: block;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+}

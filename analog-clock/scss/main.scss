@@ -1,0 +1,231 @@
+$primaryColor: #ff0b55;
+$secondaryColor: #d61d4e;
+$darkColor: #323232;
+$lightColor: #ffdee6;
+$clockWidth: 400px;
+$clockHeight: 400px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, $secondaryColor, #87364c);
+  overflow: auto;
+  padding: 1rem 0;
+}
+.title {
+  font-size: 2rem;
+
+  text-align: center;
+  color: $lightColor;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.container {
+  display: grid;
+  place-items: center;
+  margin-top: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 2rem;
+
+  // overflow: auto;
+}
+
+.clock {
+  width: $clockWidth;
+  height: $clockHeight;
+  background-color: $primaryColor;
+  border: 8px solid $secondaryColor;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba($primaryColor, 0.9);
+  position: relative;
+  margin: 1rem 0;
+  .numbers {
+    font-size: 2rem;
+    color: $lightColor;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .number {
+      position: absolute;
+      animation: animateText 2s ease-in-out 1s infinite;
+      &.twelve {
+        left: 50%;
+        top: 6%;
+        transform: translate(-50%, -50%);
+      }
+      &.one {
+        right: 22%;
+        top: 13%;
+        transform: translate(-50%, -50%);
+      }
+      &.two {
+        right: 6%;
+        top: 28%;
+        transform: translate(-50%, -50%);
+      }
+      &.three {
+        right: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &.four {
+        right: 6%;
+        top: 72%;
+        transform: translate(-50%, -50%);
+      }
+      &.five {
+        right: 24%;
+        top: 88%;
+        transform: translate(-50%, -50%);
+      }
+      &.six {
+        left: 50%;
+        bottom: -4%;
+        transform: translate(-50%, -50%);
+      }
+      &.seven {
+        left: 29%;
+        bottom: 2%;
+        transform: translate(-50%, -50%);
+      }
+      &.eight {
+        left: 11%;
+        bottom: 18%;
+        transform: translate(-50%, -50%);
+      }
+      &.nine {
+        left: 5%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &.ten {
+        left: 12%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+      }
+      &.eleven {
+        left: 27%;
+        top: 14%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .parts {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .dot {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: #3a5ff2;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+    }
+    .line {
+      position: absolute;
+      &.second-line {
+        width: 2px;
+        height: 180px;
+        background: rgb(146, 10, 117);
+        left: 50%;
+        top: 26.5%;
+        transform: translateY(-50%);
+        z-index: 300;
+      }
+      &.minute-line {
+        width: 8px;
+        height: 150px;
+        background: #fff;
+        border: none;
+        outline: none;
+        left: 49%;
+        top: 30%;
+        transform: translateY(-50%);
+        z-index: 100;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          top: -4px;
+          left: -1px;
+          background-color: inherit;
+          transform: rotate(45deg);
+        }
+      }
+      &.hour-line {
+        width: 8px;
+        height: 80px;
+        background: #323232;
+        left: 49%;
+        top: 40%;
+        transform: translateY(-50%);
+        z-index: 100;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          top: -4px;
+          left: -1px;
+          background-color: inherit;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+@keyframes animateText {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #333;
+  }
+  100% {
+    color: purple;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .clock {
+    margin-top: 1rem;
+    width: 300px;
+    height: 300px;
+    .numbers {
+      font-size: 1.5rem;
+    }
+    .parts {
+      .line {
+        &.hour-line {
+          top: 37%;
+        }
+        &.minute-line {
+          height: 120px;
+          top: 29%;
+        }
+        &.second-line {
+          height: 140px;
+          top: 25.5%;
+        }
+      }
+    }
+  }
+}

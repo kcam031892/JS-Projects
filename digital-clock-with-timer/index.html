@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock & Alarm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <div class="container">
+
+      <div id="clock">
+        <h1 class="title">Clock</h1>
+        <div class="action-buttons">
+          <a href="#" class="btn btn-clock">Clock</a>
+          <a href="#" class="btn btn-timer">Timer</a>
+        </div>
+        <div class="clock-date-container">
+          <h1 class="clock-date"></h1>
+        </div>
+        <div class="clock-grid">
+          <div class="clock-grid-item">
+            <h1 class="clock-hr"></h1>
+          </div>
+          <div class="clock-grid-item">
+            <h1 class="clock-min"></h1>
+          </div>
+          <div class="clock-grid-item">
+            <h1 class="clock-sec"></h1>
+          </div>
+          <div class="clock-grid-item">
+            <h1 class="clock-period"></h1>
+          </div>
+        </div>
+        <div class="clock-day-container">
+          <h1 class="clock-day"></h1>
+        </div>
+      </div>
+      <div id="timer">
+        <h1 class="title">Timer</h1>
+        <div class="action-buttons">
+          <a href="#" class="btn btn-clock">Clock</a>
+          <a href="#" class="btn btn-timer">Timer</a>
+        </div>
+        <div class="timer-grid">
+          <div class="timer-grid-item">
+            <h1 class="alarm-hr">
+              <select name="hr" id="select_hr">
+
+              </select>
+            </h1>
+          </div>
+          <div class="timer-grid-item">
+            <select name="hr" id="select_min">
+
+            </select>
+          </div>
+          <div class="timer-grid-item">
+            <select name="hr" id="select_sec">
+
+            </select>
+          </div>
+        </div>
+        <div class="timer-container">
+          <button class="btn" id="timer-start">Start</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/Timer.js"></script>
+  <script src="js/Clock.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
