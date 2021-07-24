@@ -1,16 +1,16 @@
 # A Vanilla JS Projects
 
-| Project                  | Link                         |
-| ------------------------ | ---------------------------- |
-| Analog Clock             | [analog-clock](analog-clock) |
-| Animated Count Up        | [analog-clock](analog-clock) |
-| Breaking Bad             | [analog-clock](analog-clock) |
-| Counter                  | [analog-clock](analog-clock) |
-| Digital Clock            | [analog-clock](analog-clock) |
-| Digital Clock with Timer | [analog-clock](analog-clock) |
-| Hex Generator            | [analog-clock](analog-clock) |
-| Quote Generator          | [analog-clock](analog-clock) |
-| Rock Paper Scissor       | [analog-clock](analog-clock) |
-| Shopping Cart            | [analog-clock](analog-clock) |
-| Sign Up Form             | [analog-clock](analog-clock) |
-| TictacToe                | [analog-clock](analog-clock) |
+| Project                  | Link                                                                                       |
+| ------------------------ | ------------------------------------------------------------------------------------------ |
+| Analog Clock             | [Click Here](https://github.com/kcam031892/JS-Projects/tree/main/analog-clock)             |
+| Animated Count Up        | [Click Here](https://github.com/kcam031892/JS-Projects/tree/main/animated-count-up)        |
+| Breaking Bad             | [Click Here](https://github.com/kcam031892/JS-Projects/tree/main/BreakingBad)              |
+| Counter                  | [Click Here](https://github.com/kcam031892/JS-Projects/tree/main/counter)                  |
+| Digital Clock            | [Click Here](https://github.com/kcam031892/JS-Projects/tree/main/digital-clock)            |
+| Digital Clock with Timer | [Click Here](https://github.com/kcam031892/JS-Projects/tree/main/digital-clock-with-timer) |
+| Hex Generator            | [Click Here](https://github.com/kcam031892/JS-Projects/tree/main/hex-generator)            |
+| Quote Generator          | [Click Here](https://github.com/kcam031892/JS-Projects/tree/main/quote-generator)          |
+| Rock Paper Scissor       | [Click Here](https://github.com/kcam031892/JS-Projects/tree/main/rock-paper-scissor)       |
+| Shopping Cart            | [Click Here](https://github.com/kcam031892/JS-Projects/tree/main/ShoppingCart)             |
+| Sign Up Form             | [Click Here](https://github.com/kcam031892/JS-Projects/tree/main/signup-form)              |
+| TictacToe                | [Click Here](https://github.com/kcam031892/JS-Projects/tree/main/tictactoe)                |
